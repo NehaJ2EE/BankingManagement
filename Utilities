@@ -1,0 +1,55 @@
+package com.cg.service;
+
+public class Utilities {
+	public static boolean accountIdValidation(String accountId) {
+		String pattern = "[0-9]{12}";
+		if(accountId.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	public static boolean amountValidation(String amount) {
+		String pattern = "[+-]?[0-9][0-9]*";
+		if(amount.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	public static boolean tenureValidation(String tenure) {
+		String pattern = "[+-]?[0-9][0-9]*";
+		if(tenure.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	public static boolean creditScoreValidation(String creditScore) {
+		String pattern = "[+-]?[0-9][0-9]*";
+		if(creditScore.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	public static boolean roiValidation(String roi) {
+		String pattern = "[+-]?[0-9][0-9]*";
+		if(roi.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	 public static boolean statusValidation(String loanStatus) {
+		String pattern = "^[A-Za-z, ]++$";
+		if(loanStatus.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+	public static boolean typeValidation(String loanType) {
+		String pattern = "^[A-Za-z, ]++$";
+		if(loanType.matches(pattern))
+			return true;
+		else 
+			return false;
+	}
+
+
+}
